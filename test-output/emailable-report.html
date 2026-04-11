@@ -9,25 +9,15 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">register user suite</th></tr>
-<tr><td><a href="#t0">register test cases</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">59,748</td><td></td><td></td></tr>
+<tr><td><a href="#t0">register test cases</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">43,806</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">register user suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">register test cases &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testCases.AccountInfotestCases</td><td><a href="#m0">accountInfo</a></td><td rowspan="1">1775846721512</td><td rowspan="1">40385</td></tr><tr><th colspan="4">register test cases &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testCases.SignUpTestCases</td><td><a href="#m1">signUp</a></td><td rowspan="1">1775846717685</td><td rowspan="1">3505</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">register user suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">register test cases &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testCases.AccountInfotestCases</td><td><a href="#m0">accountInfo</a></td><td rowspan="1">1775880066881</td><td rowspan="1">8127</td></tr><tr><th colspan="4">register test cases &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testCases.SignUpTestCases</td><td><a href="#m1">signUp</a></td><td rowspan="1">1775880041790</td><td rowspan="1">24941</td></tr></tbody>
 </table>
-<h2>register test cases</h2><h3 id="m0">testCases.AccountInfotestCases#accountInfo</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th><th>Parameter #12</th></tr><tr class="param stripe"><td>Saibaba1@3</td><td>2</td><td>February</td><td>1992</td><td>santhoshkumar</td><td>m</td><td>natrampalli</td><td>India</td><td>tamilnadu</td><td>chennai</td><td>635852</td><td>8456978945</td></tr><tr><th colspan="12">Exception</th></tr><tr><td colspan="12"><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element found by By.xpath: //div[contains(@id,&apos;dismiss-button-element&apos;)]/div
-(tried for 30 seconds with 500 milliseconds interval)
-Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\santhosh\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52650}, goog:processID: 42828, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52650/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7b67fab27e106835830865c3455464a0
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:233)
-	at basePackage.BaseClass.elementVisibleClose(BaseClass.java:77)
-	at testPages.AccountInformationPage.closepopup(AccountInformationPage.java:107)
-	at testPages.AccountInformationPage.AccountInformationsFunctions(AccountInformationPage.java:132)
+<h2>register test cases</h2><h3 id="m0">testCases.AccountInfotestCases#accountInfo</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th><th>Parameter #12</th></tr><tr class="param stripe"><td>Saibaba1@3</td><td>2</td><td>February</td><td>1992</td><td>santhoshkumar</td><td>m</td><td>natrampalli</td><td>India</td><td>tamilnadu</td><td>chennai</td><td>635852</td><td>8456978945</td></tr><tr><th colspan="12">Exception</th></tr><tr><td colspan="12"><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at testPages.AccountInformationPage.AccountInformationsFunctions(AccountInformationPage.java:135)
 	at testCases.AccountInfotestCases.accountInfo(AccountInfotestCases.java:26)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m1">testCases.SignUpTestCases#signUp</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>santhoshkumar</td><td>sannn@med.com</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

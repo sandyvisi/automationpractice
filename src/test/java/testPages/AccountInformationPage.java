@@ -132,7 +132,7 @@ public class AccountInformationPage extends BaseClass {
 //		closepopup(intermittentpopups);
 		cickdelete();
 		String accountDeletedMessage = webElementWaitGetText(accountDeleteMessageLocator);
-		Assert.assertTrue(accountDeletedMessage.equalsIgnoreCase("Account Deleted!"));
+		Assert.assertTrue(accountDeletedMessage.equalsIgnoreCase("Account Del2eted!"));
 		cickContinue();
 	}
 

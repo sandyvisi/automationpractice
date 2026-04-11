@@ -16,9 +16,9 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 
 import basePackage.BaseClass;
 
-public class ExtentReportManager extends BaseClass implements ITestListener {
+public class ExtentReportManager implements ITestListener {
 
-	String dateFormate = new SimpleDateFormat("HH.mm.ss").format(new Date());
+	String dateFormate = new SimpleDateFormat("HH-mm-ss").format(new Date());
 
 	public ExtentSparkReporter sparkReporter;
 	public ExtentReports extentReports;
@@ -46,13 +46,14 @@ public class ExtentReportManager extends BaseClass implements ITestListener {
 
 	@Override
 	public void onTestStart(ITestResult result) {
-
 		System.out.println("---------Test Method Execution is Started------");
+		extentTest = extentReports.createTest(result.getName());
 
 	}
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
+
 		extentTest = extentReports.createTest(result.getName());
 		extentTest.log(Status.PASS, "Test case is passed" + result.getName());
 
@@ -63,7 +64,8 @@ public class ExtentReportManager extends BaseClass implements ITestListener {
 		extentTest.log(Status.FAIL, "Test case is failed" + result.getName());
 		extentTest.log(Status.FAIL, "Test case is failed" + result.getThrowable());
 		try {
-			ScreenshotUtil.getScreenshot(driver, result.getName());
+			String path = ScreenshotUtil.getScreenshot(BaseClass.driver, result.getName());
+
 			extentTest.addScreenCaptureFromPath(ScreenshotUtil.filePath);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block

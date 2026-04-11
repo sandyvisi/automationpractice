@@ -25,7 +25,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass {
 
-	protected static WebDriver driver;
+	public static WebDriver driver;
 	protected static WebDriverWait webDriverWait;
 	protected static Properties properties;
 	protected static String propertiesFilePath = System.getProperty("user.dir")

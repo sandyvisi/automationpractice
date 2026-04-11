@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-11T00:15:02 IST" name="register user suite" finished-at="2026-04-11T00:16:01 IST" duration-ms="59748">
+  <suite started-at="2026-04-11T09:30:31 IST" name="register user suite" finished-at="2026-04-11T09:31:15 IST" duration-ms="43806">
     <groups>
     </groups>
-    <test started-at="2026-04-11T00:15:02 IST" name="register test cases" finished-at="2026-04-11T00:16:01 IST" duration-ms="59748">
+    <test started-at="2026-04-11T09:30:31 IST" name="register test cases" finished-at="2026-04-11T09:31:15 IST" duration-ms="43806">
       <class name="testCases.AccountInfotestCases">
-        <test-method signature="accountInfo(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.AccountInfotestCases@5c90e579]" started-at="2026-04-11T00:15:21 IST" name="accountInfo" data-provider="accountInfo" finished-at="2026-04-11T00:16:01 IST" duration-ms="40385" status="FAIL">
+        <test-method signature="accountInfo(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.AccountInfotestCases@5c90e579]" started-at="2026-04-11T09:31:06 IST" name="accountInfo" data-provider="accountInfo" finished-at="2026-04-11T09:31:15 IST" duration-ms="8127" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -70,29 +70,17 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.TimeoutException">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Expected condition failed: waiting for presence of element found by By.xpath: //div[contains(@id,'dismiss-button-element')]/div
-(tried for 30 seconds with 500 milliseconds interval)
-Build info: version: '4.41.0', revision: '9fc754f'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\santhosh\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52650}, goog:processID: 42828, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52650/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7b67fab27e106835830865c3455464a0]]>
+              <![CDATA[expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element found by By.xpath: //div[contains(@id,'dismiss-button-element')]/div
-(tried for 30 seconds with 500 milliseconds interval)
-Build info: version: '4.41.0', revision: '9fc754f'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\santhosh\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52650}, goog:processID: 42828, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52650/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7b67fab27e106835830865c3455464a0
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:233)
-at basePackage.BaseClass.elementVisibleClose(BaseClass.java:77)
-at testPages.AccountInformationPage.closepopup(AccountInformationPage.java:107)
-at testPages.AccountInformationPage.AccountInformationsFunctions(AccountInformationPage.java:132)
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at testPages.AccountInformationPage.AccountInformationsFunctions(AccountInformationPage.java:135)
 at testCases.AccountInfotestCases.accountInfo(AccountInfotestCases.java:26)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -122,17 +110,17 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- accountInfo -->
       </class> <!-- testCases.AccountInfotestCases -->
       <class name="testCases.SignUpTestCases">
-        <test-method is-config="true" signature="init()[pri:0, instance:testCases.SignUpTestCases@4c309d4d]" started-at="2026-04-11T00:15:02 IST" name="init" finished-at="2026-04-11T00:15:14 IST" duration-ms="12125" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:testCases.SignUpTestCases@4c309d4d]" started-at="2026-04-11T09:30:31 IST" name="init" finished-at="2026-04-11T09:30:38 IST" duration-ms="6720" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="signUp(java.lang.String,java.lang.String)[pri:1, instance:testCases.SignUpTestCases@4c309d4d]" started-at="2026-04-11T00:15:17 IST" name="signUp" data-provider="signUpDatas" finished-at="2026-04-11T00:15:21 IST" duration-ms="3505" status="PASS">
+        <test-method signature="signUp(java.lang.String,java.lang.String)[pri:1, instance:testCases.SignUpTestCases@4c309d4d]" started-at="2026-04-11T09:30:41 IST" name="signUp" data-provider="signUpDatas" finished-at="2026-04-11T09:31:06 IST" duration-ms="24941" status="PASS">
           <params>
             <param index="0">
               <value>

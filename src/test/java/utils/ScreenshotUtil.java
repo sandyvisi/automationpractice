@@ -12,19 +12,14 @@ import org.openqa.selenium.WebDriver;
 
 public class ScreenshotUtil {
 
-	static String dateformat = new SimpleDateFormat("HH:mm:ss").format(new Date());
-	static TakesScreenshot ts;
-
-	public static String filePath;
-
-	public static void getScreenshot(WebDriver driver, String name) throws IOException {
-		filePath = System.getProperty("user.dir") + "\\screenshots" + dateformat + name + ".png";
+	public static String getScreenshot(WebDriver driver, String name) throws IOException {
+		String timeStamp = new SimpleDateFormat("HH-mm-ss").format(new Date());
+		String filePath = System.getProperty("user.dir") + "\\screenshots\\" + timeStamp + "_" + name + ".png";
 		File destination = new File(filePath);
-		ts = (TakesScreenshot) driver;
+		TakesScreenshot ts = (TakesScreenshot) driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);
-
 		FileUtils.copyFile(source, destination);
-
+		return filePath;
 	}
 
 }
