@@ -62,11 +62,11 @@ public class ExtentReportManager implements ITestListener {
 	@Override
 	public void onTestFailure(ITestResult result) {
 		extentTest.log(Status.FAIL, "Test case is failed" + result.getName());
-		extentTest.log(Status.FAIL, "Test case is failed" + result.getThrowable());
+		extentTest.log(Status.FAIL, result.getThrowable());
 		try {
 			String path = ScreenshotUtil.getScreenshot(BaseClass.driver, result.getName());
 
-			extentTest.addScreenCaptureFromPath(ScreenshotUtil.filePath);
+			extentTest.addScreenCaptureFromPath(path);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

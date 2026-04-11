@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-11T09:30:31 IST" name="register user suite" finished-at="2026-04-11T09:31:15 IST" duration-ms="43806">
+  <suite started-at="2026-04-11T09:39:58 IST" name="register user suite" finished-at="2026-04-11T09:40:29 IST" duration-ms="30508">
     <groups>
     </groups>
-    <test started-at="2026-04-11T09:30:31 IST" name="register test cases" finished-at="2026-04-11T09:31:15 IST" duration-ms="43806">
+    <test started-at="2026-04-11T09:39:58 IST" name="register test cases" finished-at="2026-04-11T09:40:29 IST" duration-ms="30508">
       <class name="testCases.AccountInfotestCases">
-        <test-method signature="accountInfo(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.AccountInfotestCases@5c90e579]" started-at="2026-04-11T09:31:06 IST" name="accountInfo" data-provider="accountInfo" finished-at="2026-04-11T09:31:15 IST" duration-ms="8127" status="FAIL">
+        <test-method signature="accountInfo(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.AccountInfotestCases@5c90e579]" started-at="2026-04-11T09:40:13 IST" name="accountInfo" data-provider="accountInfo" finished-at="2026-04-11T09:40:29 IST" duration-ms="15434" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -116,11 +116,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
         </test-method> <!-- accountInfo -->
       </class> <!-- testCases.AccountInfotestCases -->
       <class name="testCases.SignUpTestCases">
-        <test-method is-config="true" signature="init()[pri:0, instance:testCases.SignUpTestCases@4c309d4d]" started-at="2026-04-11T09:30:31 IST" name="init" finished-at="2026-04-11T09:30:38 IST" duration-ms="6720" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:testCases.SignUpTestCases@4c309d4d]" started-at="2026-04-11T09:39:59 IST" name="init" finished-at="2026-04-11T09:40:04 IST" duration-ms="4823" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="signUp(java.lang.String,java.lang.String)[pri:1, instance:testCases.SignUpTestCases@4c309d4d]" started-at="2026-04-11T09:30:41 IST" name="signUp" data-provider="signUpDatas" finished-at="2026-04-11T09:31:06 IST" duration-ms="24941" status="PASS">
+        <test-method signature="signUp(java.lang.String,java.lang.String)[pri:1, instance:testCases.SignUpTestCases@4c309d4d]" started-at="2026-04-11T09:40:08 IST" name="signUp" data-provider="signUpDatas" finished-at="2026-04-11T09:40:13 IST" duration-ms="4964" status="PASS">
           <params>
             <param index="0">
               <value>
