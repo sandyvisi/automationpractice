@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd" >
+<suite name="contact us suite">
+	<listeners>
+		<listener class-name="utils.ExtentReportManager" />
+	</listeners>
+	<test name="register test cases">
+		<classes>
+			<class name="testCases.ContactUsTestCase" />
+		</classes>
+	</test>
+</suite>

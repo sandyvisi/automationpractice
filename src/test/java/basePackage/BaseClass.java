@@ -61,6 +61,14 @@ public class BaseClass {
 		fis.close();
 
 	}
+	
+	
+	
+
+	public void moveToAlertAndAccept() {
+		Alert alert = driver.switchTo().alert();
+		alert.accept();
+	}
 
 	public void alertClose() {
 		try {

@@ -11,7 +11,7 @@ import basePackage.BaseClass;
 import testPages.AccountInformationPage;
 import utils.ExcelReader;
 
-public class AccountInfotestCases {
+public class RegisterUser {
 	BaseClass base = new BaseClass();
 	AccountInformationPage accountPage = new AccountInformationPage();
 

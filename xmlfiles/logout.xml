@@ -1,12 +1,12 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd" >
-<suite name="register user suite">
+<suite name="logut user suite">
 	<listeners>
 		<listener class-name="utils.ExtentReportManager" />
 	</listeners>
-	<test name="register test cases">
+	<test name="logut test cases">
 		<classes>
 			<class name="testCases.SignUpTestCases" />
-			<class name="testCases.AccountInfotestCases" />
+			<class name="testCases.LogoutTestCase" />
 		</classes>
 	</test>
 </suite>

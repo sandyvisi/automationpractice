@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd" >
+<suite name="register user suite">
+	<listeners>
+		<listener class-name="utils.ExtentReportManager" />
+	</listeners>
+	<test name="register test cases">
+		<classes>
+			<class name="testCases.SignUpTestCases" />
+
+			<class name="testCases.AccountInfotestCases" />
+		</classes>
+	</test>
+</suite>

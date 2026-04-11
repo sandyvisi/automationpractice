@@ -18,13 +18,13 @@ import basePackage.BaseClass;
 
 public class ExtentReportManager implements ITestListener {
 
-	String dateFormate = new SimpleDateFormat("HH-mm-ss").format(new Date());
+	String timeStamp = new SimpleDateFormat("HH-mm-ss").format(new Date());
 
 	public ExtentSparkReporter sparkReporter;
 	public ExtentReports extentReports;
 	public ExtentTest extentTest;
 
-	public String reportsPath = System.getProperty("user.dir") + "\\reports" + dateFormate + "reports.html";
+	public String reportsPath = System.getProperty("user.dir") + "\\reports\\" + timeStamp + "report.html";
 
 	@Override
 	public void onStart(ITestContext context) {
@@ -54,7 +54,6 @@ public class ExtentReportManager implements ITestListener {
 	@Override
 	public void onTestSuccess(ITestResult result) {
 
-		extentTest = extentReports.createTest(result.getName());
 		extentTest.log(Status.PASS, "Test case is passed" + result.getName());
 
 	}
@@ -65,7 +64,6 @@ public class ExtentReportManager implements ITestListener {
 		extentTest.log(Status.FAIL, result.getThrowable());
 		try {
 			String path = ScreenshotUtil.getScreenshot(BaseClass.driver, result.getName());
-
 			extentTest.addScreenCaptureFromPath(path);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
