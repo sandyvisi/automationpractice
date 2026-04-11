@@ -1,5 +1,6 @@
 package utils;
 
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -13,7 +14,9 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
-public class ExtentReportManager implements ITestListener {
+import basePackage.BaseClass;
+
+public class ExtentReportManager extends BaseClass implements ITestListener {
 
 	String dateFormate = new SimpleDateFormat("HH.mm.ss").format(new Date());
 
@@ -21,7 +24,7 @@ public class ExtentReportManager implements ITestListener {
 	public ExtentReports extentReports;
 	public ExtentTest extentTest;
 
-	public String reportsPath = System.getProperty("user.dir") + "\\reports" + dateFormate +  "reports.html";
+	public String reportsPath = System.getProperty("user.dir") + "\\reports" + dateFormate + "reports.html";
 
 	@Override
 	public void onStart(ITestContext context) {
@@ -59,6 +62,13 @@ public class ExtentReportManager implements ITestListener {
 	public void onTestFailure(ITestResult result) {
 		extentTest.log(Status.FAIL, "Test case is failed" + result.getName());
 		extentTest.log(Status.FAIL, "Test case is failed" + result.getThrowable());
+		try {
+			ScreenshotUtil.getScreenshot(driver, result.getName());
+			extentTest.addScreenCaptureFromPath(ScreenshotUtil.filePath);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	@Override
