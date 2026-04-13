@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd" >
+<suite name="cucumber test suite">
+	<listeners>
+		<listener class-name="utils.ExtentReportManager" />
+	</listeners>
+	<test name="cucumber test cases">
+		<classes>
+			<class name="Runners.TestRunner" />
+		</classes>
+	</test>
+</suite>
