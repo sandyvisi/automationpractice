@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd" >
+<suite name="Medpt Test Cases">
+	<test name="Medpt Smoke Test cases">
+		<classes>
+			<class name="testPages.LoginToMedptAccount">
+				<methods>
+					<include name="loginPage" />
+					<include name="switchToNewTab" />
+					<include name="switchToOldTab" />
+					<include name="trialPort" />
+					<exclude name="safetyRerportsPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

@@ -12,10 +12,9 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 public class ExcelReader {
-
-	public static String excelPath = System.getProperty("user.dir")
-			+ "\\src\\test\\resources\\automationpracticeproject.xlsx";
-
+	 
+	static String excelPath=System.getProperty("user.dir")+"\\automationexercise\\src\\test\\resources\\automationpracticeproject.xlsx";
+	
 	public static Object[][] excelDatas(String sheetName) throws EncryptedDocumentException, IOException {
 
 		FileInputStream fis = new FileInputStream(excelPath);
